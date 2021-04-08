@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Number Guess</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Higher Lower</title>
 </head>
 <body>
-  
+
+  <h1 id="header">Higher - Lower</h1>
+  <h2></h2>
+
+  <form id=formstyle>
+<label for="userguess" name="myform">Your Guess:</label><br>
+      <input type="number" id="guessboxvalue" onkeypress="isNumberKey(event)"/><br>
+      <input type="button" value="Guess" onclick="userguess()"/>
+  </form>
+
+<p id="message"></p>
+
   <script src="assets/js/app.js"></script>
 </body>
 </html>
